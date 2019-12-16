@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CorrectWay_OCP
 {
@@ -67,6 +68,21 @@ namespace CorrectWay_OCP
         }
     }
 
+
+    //Generic Way
+    class AndSpecification<T> : ISpecification<T>
+    {
+        IList<ISpecification<T>> _specs;
+        public AndSpecification(IList<ISpecification<T>> specs)
+        {
+            _specs = specs;
+        }
+
+        public bool IsSatisfied(T t)
+        {
+            return _specs.All(x => x.IsSatisfied(t));
+        }
+    }
 
     class ProductFilter : IFilter<Product>
     {
@@ -136,6 +152,24 @@ namespace CorrectWay_OCP
 
 
             foreach (var product in productFilter.Filter(products, new SizeAndColorSpecification(Size.Extra_Large, Color.Blue)))
+            {
+                Console.WriteLine(product);
+            }
+
+
+
+
+            Console.WriteLine($"Generic filter by Color  {Color.Blue} and Size {Size.Extra_Large}");
+
+
+            foreach (var product in productFilter.Filter(products, new AndSpecification<Product>(
+                    new List<ISpecification<Product>>
+                        {
+                            new ColorSpecification(Color.Blue),
+                            new SizeSpecification(Size.Extra_Large)
+
+                        })
+                ))
             {
                 Console.WriteLine(product);
             }
