@@ -17,9 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Single Responsibility Princ
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Open Closed Principle", "Open Closed Principle", "{5B81C9A6-786B-4DD5-BB08-8C84B00331A3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorrectWay", "Single Responsibility Principle\CorrectWay\CorrectWay.csproj", "{AA0FC497-9887-4DF9-B365-815D70AD02D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorrectWay_SRP", "Single Responsibility Principle\CorrectWay\CorrectWay_SRP.csproj", "{AA0FC497-9887-4DF9-B365-815D70AD02D1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Issue", "Single Responsibility Principle\Issue\Issue.csproj", "{BD90904C-A771-4977-8085-D8DFE22C7155}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Issue_SRP", "Single Responsibility Principle\Issue\Issue_SRP.csproj", "{BD90904C-A771-4977-8085-D8DFE22C7155}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Issue_OCP", "Open Closed Principle\Issue_OCP\Issue_OCP.csproj", "{89EEE4BA-4D05-483B-BF1B-B2722824EBF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorrectWay_OCP", "Open Closed Principle\CorrectWay_OCP\CorrectWay_OCP.csproj", "{36C139E0-A687-41AF-89A8-9490C9CC6365}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,14 @@ Global
 		{BD90904C-A771-4977-8085-D8DFE22C7155}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD90904C-A771-4977-8085-D8DFE22C7155}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD90904C-A771-4977-8085-D8DFE22C7155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89EEE4BA-4D05-483B-BF1B-B2722824EBF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89EEE4BA-4D05-483B-BF1B-B2722824EBF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89EEE4BA-4D05-483B-BF1B-B2722824EBF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89EEE4BA-4D05-483B-BF1B-B2722824EBF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36C139E0-A687-41AF-89A8-9490C9CC6365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C139E0-A687-41AF-89A8-9490C9CC6365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C139E0-A687-41AF-89A8-9490C9CC6365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C139E0-A687-41AF-89A8-9490C9CC6365}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +59,8 @@ Global
 		{5B81C9A6-786B-4DD5-BB08-8C84B00331A3} = {D974CB87-5251-4811-9CC7-A4CF8C696CE9}
 		{AA0FC497-9887-4DF9-B365-815D70AD02D1} = {91D502F7-67CB-407B-BF85-4EB80E8DB4F8}
 		{BD90904C-A771-4977-8085-D8DFE22C7155} = {91D502F7-67CB-407B-BF85-4EB80E8DB4F8}
+		{89EEE4BA-4D05-483B-BF1B-B2722824EBF5} = {5B81C9A6-786B-4DD5-BB08-8C84B00331A3}
+		{36C139E0-A687-41AF-89A8-9490C9CC6365} = {5B81C9A6-786B-4DD5-BB08-8C84B00331A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BE5A56D-AB4C-406B-92A7-AE2B36BB5D3A}

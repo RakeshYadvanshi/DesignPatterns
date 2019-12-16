@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace Issue
+namespace CorrectWay_SRP
 {
     /// <summary>
     /// this class have only reponsibility 

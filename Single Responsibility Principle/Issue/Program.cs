@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace Issue
+namespace Issue_SRP
 {
     /// <summary>
     /// this class have muliple reponsibility 
@@ -43,7 +43,7 @@ namespace Issue
         public void Load(string fileName)
         {
             var entries = File.ReadAllLines(fileName);
-            this.Entries.AddRange(entries);
+            Entries.AddRange(entries);
         }
 
     }
